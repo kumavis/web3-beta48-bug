@@ -5,11 +5,11 @@ start().catch(console.error)
 
 async function start() {
   const provider = window.web3 && window.web3.currentProvider
-  instrumentProviderForDebugging(provider)
   if (!provider) {
     log('could not find web3 provider')
     return
   }
+  instrumentProviderForDebugging(provider)
   if (provider.enable) await provider.enable()
   const web3 = new Web3(provider)
   const accounts = await web3.eth.getAccounts()
