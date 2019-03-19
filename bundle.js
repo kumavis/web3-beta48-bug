@@ -5,7 +5,7 @@ const Web3 = require('web3')
 start().catch(console.error)
 
 async function start() {
-  const provider = window.web3.currentProvider
+  const provider = window.web3 && window.web3.currentProvider
   instrumentProviderForDebugging(provider)
   if (!provider) {
     log('could not find web3 provider')
