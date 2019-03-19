@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo index.js:bundle.js --open"
+    "start": "budo index.js:bundle.js --open",
+    "build": "browserify index.js > bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "web3": "^1.0.0-beta.48"
   },
   "devDependencies": {
+    "browserify": "^16.2.3",
     "budo": "^11.6.1"
   }
 }
