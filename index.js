@@ -20,6 +20,7 @@ async function start() {
   }
   const retVal = web3.eth.personal.sign('WEB3_LOGIN_MESSAGE', accounts[0], console.log)
   log(`personal sign returned a "${typeof retVal}" (${retVal && retVal.constructor.name})`)
+  log(`check browser console for Error and request objects`)
 }
 
 function log (message) {

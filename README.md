@@ -1,6 +1,8 @@
 Bug reproduction for personal_sign issue on web3@1.0.0-beta.48
 
-### instructions
+see live demo here https://kumavis.github.io/web3-beta48-bug/
+
+### build instructions
 ```
 npm install
 npm start
