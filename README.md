@@ -4,6 +4,8 @@ requires web3 browser like metamask or similar
 
 see live demo here https://kumavis.github.io/web3-beta48-bug/
 
+bug report: https://github.com/ethereum/web3.js/issues/2528
+
 ### build instructions
 ```
 npm install
